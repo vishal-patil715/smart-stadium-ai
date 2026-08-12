@@ -89,7 +89,7 @@ async function generateAIResponse(message) {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:5000/api/chat", {
+        const response = await fetch("https://smart-stadium-ai-fg1k.onrender.com/api/chat", {
             method: "POST",
 
             headers: {
