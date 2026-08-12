@@ -1,0 +1,79 @@
+{
+    "stadium": {
+        "name": "StadiumAI World Cup Arena",
+        "city": "FIFA World Cup 2026",
+        "total_gates": 8
+    },
+
+    "gates": [
+        {
+            "id": "Gate 1",
+            "status": "open",
+            "crowd_level": "low"
+        },
+        {
+            "id": "Gate 2",
+            "status": "open",
+            "crowd_level": "medium"
+        },
+        {
+            "id": "Gate 3",
+            "status": "open",
+            "crowd_level": "high"
+        },
+        {
+            "id": "Gate 4",
+            "status": "open",
+            "crowd_level": "low"
+        },
+        {
+            "id": "Gate 5",
+            "status": "open",
+            "crowd_level": "medium"
+        },
+        {
+            "id": "Gate 6",
+            "status": "open",
+            "crowd_level": "low"
+        },
+        {
+            "id": "Gate 7",
+            "status": "open",
+            "crowd_level": "medium"
+        },
+        {
+            "id": "Gate 8",
+            "status": "open",
+            "crowd_level": "low"
+        }
+    ],
+
+    "facilities": [
+        {
+            "name": "Medical Center",
+            "location": "Zone A",
+            "accessible": true
+        },
+        {
+            "name": "Wheelchair Assistance",
+            "location": "Gate 4",
+            "accessible": true
+        },
+        {
+            "name": "Food Court",
+            "location": "Zone B",
+            "accessible": true
+        },
+        {
+            "name": "Information Center",
+            "location": "Gate 1",
+            "accessible": true
+        }
+    ],
+
+    "transport": {
+        "average_wait_minutes": 6,
+        "bus_service": "running",
+        "metro_service": "running"
+    }
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StadiumAI | Smart Stadium Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <div>
+                <h2>Stadium<span>AI</span></h2>
+                <small>Smart Stadium Operations</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#assistant">AI Assistant</a>
+            <a href="#operations">Operations</a>
+        </nav>
+
+        <button class="language-btn">🌐 English</button>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main id="dashboard">
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    🤖 GenAI Powered
+                </div>
+
+                <h1>
+                    Your Intelligent
+                    <span>Stadium Companion</span>
+                </h1>
+
+                <p>
+                    Navigate smarter, avoid crowds, find accessible routes,
+                    and get real-time assistance powered by Generative AI.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-btn" onclick="openAssistant()">
+                        🤖 Ask StadiumAI
+                    </button>
+
+                    <button class="secondary-btn" onclick="findRoute()">
+                        🗺️ Find My Route
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="stadium-icon">
+                    🏟️
+                </div>
+
+                <h3>FIFA World Cup 2026</h3>
+
+                <p>Smart Stadium Operations</p>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Stadium Systems Online
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATUS CARDS ================= -->
+        <section class="status-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Live Stadium Status</h2>
+                    <p>Real-time operational intelligence</p>
+                </div>
+
+                <span class="live">
+                    ● LIVE
+                </span>
+            </div>
+
+
+            <div class="status-grid">
+
+                <div class="status-card">
+                    <div class="card-top">
+                        <span class="card-icon">👥</span>
+                        <span class="safe">Normal</span>
+                    </div>
+
+                    <h3 id="overallCrowd">42%</h3>
+                    <p>Overall Crowd Level</p>
+
+                    <div class="progress">
+                        <div style="width:42%"></div>
+                    </div>
+                </div>
+
+
+                <div class="status-card">
+                    <div class="card-top">
+                        <span class="card-icon">🚪</span>
+                        <span class="safe">Open</span>
+                    </div>
+
+                    <h3>8 / 8</h3>
+                    <p>Gates Operational</p>
+
+                    <div class="progress">
+                        <div style="width:100%"></div>
+                    </div>
+                </div>
+
+
+                <div class="status-card">
+                    <div class="card-top">
+                        <span class="card-icon">♿</span>
+                        <span class="safe">Available</span>
+                    </div>
+
+                    <h3>12</h3>
+                    <p>Accessible Routes</p>
+
+                    <div class="progress">
+                        <div style="width:75%"></div>
+                    </div>
+                </div>
+
+
+                <div class="status-card">
+                    <div class="card-top">
+                        <span class="card-icon">🚌</span>
+                        <span class="safe">Running</span>
+                    </div>
+
+                    <h3>6 min</h3>
+                    <p>Average Transport Wait</p>
+
+                    <div class="progress">
+                        <div style="width:60%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= AI FEATURES ================= -->
+        <section class="features" id="operations">
+
+            <div class="section-heading">
+                <div>
+                    <h2>AI-Powered Stadium Intelligence</h2>
+                    <p>Generative AI working across stadium operations</p>
+                </div>
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+
+                    <h3>Smart Navigation</h3>
+
+                    <p>
+                        Get personalized routes based on your location,
+                        destination and current crowd levels.
+                    </p>
+
+                    <button onclick="findRoute()">
+                        Find Route →
+                    </button>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+
+                    <h3>Crowd Intelligence</h3>
+
+                    <p>
+                        AI analyzes crowd conditions and helps identify
+                        congestion before it becomes a major issue.
+                    </p>
+
+                    <button onclick="showCrowdInfo()">
+                        View Insights →
+                    </button>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">♿</div>
+
+                    <h3>Accessibility</h3>
+
+                    <p>
+                        Find wheelchair-friendly routes, accessible
+                        entrances, elevators and facilities.
+                    </p>
+
+                    <button onclick="showAccessibility()">
+                        Accessibility →
+                    </button>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+
+                    <h3>Multilingual AI</h3>
+
+                    <p>
+                        Communicate with StadiumAI in multiple languages
+                        for a more inclusive fan experience.
+                    </p>
+
+                    <button onclick="openMultilingualAI()">
+                        Talk to AI →
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= AI ASSISTANT ================= -->
+        <section class="assistant-section" id="assistant">
+
+            <div class="assistant-header">
+
+                <div>
+                    <div class="ai-title">
+                        <span class="ai-avatar">🤖</span>
+
+                        <div>
+                            <h2>StadiumAI Assistant</h2>
+                            <p>Smart Stadium Assistant • Online</p>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="ai-online">
+                    ● Online
+                </span>
+
+            </div>
+
+
+            <div class="chat-container">
+
+                <div class="ai-message">
+
+                    <span class="message-avatar">🤖</span>
+
+                    <div class="message-content">
+
+                        <strong>StadiumAI</strong>
+
+                        <p>
+                            Hi! 👋 I'm your AI stadium assistant.
+                            I can help you find routes, avoid crowded areas,
+                            locate facilities, understand transport options,
+                            and answer stadium questions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="suggestions">
+
+                    <button onclick="askQuestion('How do I reach my seat?')">
+                        🪑 Find my seat
+                    </button>
+
+                    <button onclick="askQuestion('Which gate has less crowd?')">
+                        👥 Avoid crowds
+                    </button>
+
+                    <button onclick="askQuestion('Find wheelchair accessible route')">
+                        ♿ Accessible route
+                    </button>
+
+                    <button onclick="askQuestion('How can I reach the stadium?')">
+                        🚌 Transport
+                    </button>
+
+                </div>
+
+
+                <div class="chat-input">
+
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Ask StadiumAI anything..."
+                        onkeypress="handleEnter(event)"
+                    >
+
+                    <button onclick="sendMessage()">
+                        ➤
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OPERATION ALERT ================= -->
+        <section class="alert-section">
+
+            <div class="alert-card">
+
+                <div class="alert-icon">
+                    💡
+                </div>
+
+                <div>
+
+                    <h3>AI Operational Insight</h3>
+
+                    <p>
+                        StadiumAI is continuously analyzing simulated
+                        stadium data to help operators make faster decisions.
+                    </p>
+
+                </div>
+
+                <button onclick="showOperationalInsight()">
+                    View Insight
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <h3>StadiumAI</h3>
+
+        <p>
+            GenAI-powered smart stadium operations for FIFA World Cup 2026.
+        </p>
+
+        <small>
+    FIFA World Cup 2026 • Hackathon Prototype
+</small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
